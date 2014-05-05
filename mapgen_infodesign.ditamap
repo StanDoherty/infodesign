@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Information Design In DITA</title>
+ <topicref href="infodesign_intro.dita"/>
+ <topicref href="infodesign_corporateinfo.dita"/>
+ <topicref href="infodesign_domainvocab.dita"/>
+</map>
