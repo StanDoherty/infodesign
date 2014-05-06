@@ -3,6 +3,32 @@
 <topic id="topic_afp_p1w_zn">
   <title>Introduction</title>
   <body>
-    <p>Topic paragraph</p>
+    <p>The OASIS DITA specification (<xref
+        href="http://docs.oasis-open.org/dita/v1.2/os/spec/DITA1.2-spec.html" format="html"
+        scope="external">DITA 1.2 XHTML)</xref> provides a combination of ready-to-use and
+      ready-to-specialize resources for building modular information systems in XML. The
+      specification focuses on the building blocks and how they aggregate into larger structures. It
+      does not capture any of the company-specific or product-specific logic that informs the many
+      design decisions underlying a successful DITA implementation. </p>
+    <p>This community-sourced publication seeks to address some of that gap between mark-up logic
+      (thoroughly documented in the DITA spec) and implementation design logic (typically specific
+      to industries or particular companies). It addresses the most common design issues that teams
+      must face when planning a new DITA implementation or DITA migration.</p>
+    <ul id="ul_a1n_xsd_14">
+      <li>Corporate information</li>
+      <li>Domain vocabularies</li>
+      <li>Content filtering</li>
+      <li>Composites/components</li>
+      <li>Reuse - authored</li>
+      <li>Reuse - programmatic</li>
+      <li>Linking/referencing</li>
+      <li>Multimedia</li>
+      <li>Dynamic content</li>
+      <li>Information typing</li>
+      <li>Metadata (non-filtering)</li>
+          </ul>
+    <p>To review the most current contributions to this publication, see <xref
+        href="https://github.com/StanDoherty/infodesign" format="html" scope="external"
+        >https://github.com/StanDoherty/infodesign</xref>.</p>
   </body>
 </topic>
