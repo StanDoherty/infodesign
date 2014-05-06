@@ -4,5 +4,111 @@
   <title>Corporate Information</title>
   <body>
     <p>Topic paragraph</p>
+    <section>
+      <title>Corporate Sources</title>
+      <fig id="fig_lb2_dq2_14">
+        <title>xx</title>
+        <p>
+          <image placement="break" href="art/png_corporate_amazon.png" id="image_rwm_vp2_14"/>
+        </p>
+      </fig>
+      <fig id="fig_zbf_dq2_14">
+        <title>xx</title>
+        <p>
+          <image placement="break" href="art/png_corporate_apple.png" id="image_rwm_vp2_15"/>
+        </p>
+      </fig>
+      <fig id="fig_k2h_dq2_14">
+        <title>xx</title>
+        <p>
+          <image placement="break" href="art/png_corporate_dell.png" id="image_rwm_vp2_16"/>
+        </p>
+      </fig>
+      <fig id="fig_a1d_cq2_14">
+        <title>xx</title>
+        <p>
+          <image placement="break" href="art/png_corporate_ibm.png" id="image_rwm_vp2_17"/>
+        </p>
+      </fig>
+      <fig id="fig_ctd_js2_14">
+        <title>xx</title>
+        <p>
+          <image placement="break" href="art/png_corporate_cisco.png" id="image_g5d_js2_14"/>
+        </p>
+      </fig>
+      <fig id="fig_vn2_js2_14">
+        <title>xx</title>
+        <p>
+          <image placement="break" href="art/png_corporate_disclaimer_cisco.png"
+            id="image_v42_js2_14"/>
+        </p>
+      </fig>
+      <p><xref href="http://www-03.ibm.com/ibm/history/exhibits/logo/images/920911.jpg" format="jpg"
+          scope="external"/></p>
+      <image id="image_os4_mr2_14"
+        href="http://www-03.ibm.com/ibm/history/exhibits/logo/images/920911.jpg" placement="break"/>
+    </section>
+    <section>
+      <title>DITA-Accessible Corporate Information</title>
+      <p/>
+      <p>
+        <simpletable frame="all" relcolwidth="1.0* 2.82* 6.7*" id="simpletable_fng_ws2_14">
+          <sthead>
+            <stentry>#</stentry>
+            <stentry>Approach</stentry>
+            <stentry>Description</stentry>
+          </sthead>
+          <strow>
+            <stentry>
+              <p>1</p>
+            </stentry>
+            <stentry>
+              <p>DITA keydef maps linking to corporate objects stored on a corporate server</p>
+            </stentry>
+            <stentry>
+              <p>One copy of each corporate object lives on a corporate web/file server that is
+                accessible to DITA authors and build tools. DITA architects create one key
+                definition for each corporate object that points to that object on the corporate
+                server. These key definitions are stored in one or more DITA keydef maps in the DITA
+                environment. </p>
+              <codeblock>&lt;keydef keys="k_tm_1" 
+  href="http://www-03.ibm.com/ibm/history/\
+  exhibits/logo/images/920911.jpg"></codeblock>
+              <p>When a writer wants to add an instance of a corporate object to a topic, he or she
+                must:</p>
+              <ol id="ol_gfr_m52_14">
+                <li> Verify that the corporate keydef map is added to his/her working DITA map
+                  (making those keydef values available) </li>
+                <li>Add a key reference to the appropriate key definition to the working topic.</li>
+              </ol>
+              <p/>
+              <codeblock/>
+            </stentry>
+          </strow>
+          <strow>
+            <stentry>
+              <p>2</p>
+            </stentry>
+            <stentry>
+              <p>DITA keydef maps referencing corporate objects stored in a DITA repository</p>
+            </stentry>
+            <stentry>
+              <p/>
+            </stentry>
+          </strow>
+          <strow>
+            <stentry>
+              <p>3</p>
+            </stentry>
+            <stentry>
+              <p>DITA library topics containing ready-to-conref corporate objects</p>
+            </stentry>
+            <stentry>
+              <p/>
+            </stentry>
+          </strow>
+        </simpletable>
+      </p>
+    </section>
   </body>
 </topic>
