@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file is part of the DITA Open Toolkit project hosted on 
+     Sourceforge.net. See the accompanying license.txt file for 
+     applicable licenses.-->
+<!-- (c) Copyright IBM Corp. 2004, 2006 All Rights Reserved. -->
+
+<!-- 
+  | basedir can be specified to other places base on your need.
+  |
+  | Note: input, output, and temp directories will base on the basedir if 
+  | they are relative paths.
+  * -->
+
+<!-- <project name="ant_local_pdf2" default="sample2pdf2" basedir="."> -->
+
+<project name="sample_pdf" default="sample2pdf" basedir=".">
+
+  
+  <!-- dita.dir should point to the toolkit's root directory relative to where you run the .bat file -->
+<!-- ORIG <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}.."/> -->
+  <property name="dita.dir" value="${basedir}${file.separator}..${file.separator}..${file.separator}.."/>
+  
+  <!-- if file is a relative file name, the file name will be resolved 
+       relative to the importing file -->
+  <import file="${dita.dir}${file.separator}integrator.xml"/>
+  
+<!--  <target name="sample2pdf2" depends="integrate"> -->
+  <target name="sample2pdf" depends="integrate">
+
+    <ant antfile="${dita.dir}${file.separator}build.xml" target="init">
+      <!-- please refer to the toolkit's document for supported parameters, and 
+           specify them base on your needs -->
+      <property name="args.input" value="mapgen_infodesign.ditamap"/>
+<!--      <property name="args.input" value="..${file.separator}mapgen_local_kindle.ditamap"/> -->
+      <property name="output.dir" value="output${file.separator}pdf2"/>
+
+<!--      <property name="transtype" value="pdf2"/> -->
+      <property name="transtype" value="pdf"/>
+<!--	<property name="dita.input.valfile" value="..${file.separator}0ditaval${file.separator}ditaval_vds.ditaval"/> -->
+	<property name="args.filter" value="ditaval_infodesign.ditaval"/>
+
+    </ant>
+  </target>
+</project>
