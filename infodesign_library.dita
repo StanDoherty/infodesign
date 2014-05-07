@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="corporate_library_01">
+  <title>Sample Corporate Library File</title>
+  <body>
+    <p><keyword id="kw_tm_1">Dewey, Cheatum, and Howe™</keyword></p>
+    <p><image id="image_logo_1" href="art/ibm_logo_920911.jpg"/> </p>
+  </body>
+</topic>

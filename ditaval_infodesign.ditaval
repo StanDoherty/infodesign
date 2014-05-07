@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<val>
+
+<!-- #######################################################-->
+<!-- Flagging rules: not implemented in CLEAN builds -->
+<!-- #######################################################-->
+<!-- PDF and XHTML background shading -->
+<revprop val="rev14a" action="flag" backcolor="#FFFF00"/>
+<revprop val="rev14b" action="flag" backcolor="#FFCC00"/>
+<revprop val="rev15a" action="flag" backcolor="#99CC00"/>
+
+<!-- Generic highlighters -->
+<revprop val="highlight1" action="flag" backcolor="#FFFF00"/>
+<revprop val="yellow" action="flag" backcolor="#FFFF00"/>
+<revprop val="grey" action="flag" backcolor="#DCDCDC"/>
+
+<!-- #######################################################-->
+<!-- Filtering rules -->
+<!-- #######################################################-->
+
+<!-- Audience filters -->
+<prop att="audience" val="internal" action="exclude" />
+<prop att="audience" val="support" action="exclude" />
+<prop att="audience" val="draft" action="exclude" />
+
+<!-- Otherprops channel filters -->
+<prop att="otherprops" val="pdf" action="include" />
+<prop att="otherprops" val="cshelp" action="exclude" />
+<prop att="otherprops" val="doccenter2" action="exclude" />
+
+</val>

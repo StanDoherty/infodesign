@@ -2,57 +2,59 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_tfc_s1w_zn">
   <title>Corporate Information</title>
+  <shortdesc>Describes options for designing reusable content.</shortdesc>
   <body>
-    <p>Topic paragraph</p>
     <section>
-      <title>Corporate Sources</title>
+      <title>Corporate Information Assets</title>
+      <p>Most corporations identify similar types of "corporate" information that gets posted to
+        corporate web sites. Technical publication groups develop parallel libraries of corporate
+        information and make it available to authors.</p>
       <fig id="fig_lb2_dq2_14">
-        <title>xx</title>
+        <title>Amazon</title>
         <p>
           <image placement="break" href="art/png_corporate_amazon.png" id="image_rwm_vp2_14"/>
         </p>
       </fig>
       <fig id="fig_zbf_dq2_14">
-        <title>xx</title>
+        <title>Apple</title>
         <p>
           <image placement="break" href="art/png_corporate_apple.png" id="image_rwm_vp2_15"/>
         </p>
       </fig>
       <fig id="fig_k2h_dq2_14">
-        <title>xx</title>
+        <title>Dell</title>
         <p>
           <image placement="break" href="art/png_corporate_dell.png" id="image_rwm_vp2_16"/>
         </p>
       </fig>
       <fig id="fig_a1d_cq2_14">
-        <title>xx</title>
+        <title>IBM</title>
         <p>
           <image placement="break" href="art/png_corporate_ibm.png" id="image_rwm_vp2_17"/>
         </p>
       </fig>
       <fig id="fig_ctd_js2_14">
-        <title>xx</title>
+        <title>Cisco</title>
         <p>
           <image placement="break" href="art/png_corporate_cisco.png" id="image_g5d_js2_14"/>
         </p>
       </fig>
       <fig id="fig_vn2_js2_14">
-        <title>xx</title>
+        <title>Cisco Software Disclaimer</title>
         <p>
           <image placement="break" href="art/png_corporate_disclaimer_cisco.png"
             id="image_v42_js2_14"/>
         </p>
       </fig>
-      <p><xref href="http://www-03.ibm.com/ibm/history/exhibits/logo/images/920911.jpg" format="jpg"
-          scope="external"/></p>
-      <image id="image_os4_mr2_14"
-        href="http://www-03.ibm.com/ibm/history/exhibits/logo/images/920911.jpg" placement="break"/>
+      
+
     </section>
     <section>
       <title>DITA-Accessible Corporate Information</title>
-      <p/>
+      <p>There are at least three non-exclusive ways that DITA-based publishing organizations manage
+        this corporate information. </p>
       <p>
-        <simpletable frame="all" relcolwidth="1.0* 2.82* 6.7*" id="simpletable_fng_ws2_14">
+        <simpletable frame="all" relcolwidth="0.5* 2.82* 7.2*" id="simpletable_fng_ws2_14">
           <sthead>
             <stentry>#</stentry>
             <stentry>Approach</stentry>
@@ -71,9 +73,8 @@
                 definition for each corporate object that points to that object on the corporate
                 server. These key definitions are stored in one or more DITA keydef maps in the DITA
                 environment. </p>
-              <codeblock>&lt;keydef keys="k_tm_1" 
-  href="http://www-03.ibm.com/ibm/history/\
-  exhibits/logo/images/920911.jpg"></codeblock>
+              <codeblock>&lt;keydef keys="<b>k_logo_2</b>" href="<b>http://www-03.ibm.com/ibm/\
+history/exhibits/logo/images/920911.jpg</b>" format="html"/></codeblock>
               <p>When a writer wants to add an instance of a corporate object to a topic, he or she
                 must:</p>
               <ol id="ol_gfr_m52_14">
@@ -81,8 +82,11 @@
                   (making those keydef values available) </li>
                 <li>Add a key reference to the appropriate key definition to the working topic.</li>
               </ol>
-              <p/>
-              <codeblock/>
+              <codeblock>&lt;image id="image_qj4_wl3_15" 
+keyref="k_logo_2" placement="break"/></codeblock>
+              <p>
+                <image id="image_qj4_wl3_15" keyref="k_logo_2" placement="break" scope="external"/>
+              </p>
             </stentry>
           </strow>
           <strow>
@@ -93,7 +97,35 @@
               <p>DITA keydef maps referencing corporate objects stored in a DITA repository</p>
             </stentry>
             <stentry>
-              <p/>
+              <p>One copy of each corporate object lives in a local DITA repository that is
+                accessible to DITA authors and build tools. DITA architects create one key
+                definition for each corporate object that points to that object in that local DITA
+                repository. These key definitions are stored in one or more DITA keydef maps in the
+                DITA environment. </p>
+              <codeblock>&lt;keydef keys="<b>k_logo_1</b>" href="<b>art/ibm_logo_920911.jpg</b>" 
+format="html"/>
+
+&lt;keydef keys="<b>k_tm_1</b>">
+  &lt;topicmeta>
+    &lt;keywords>
+      &lt;keyword><b>Dewey, Cheatum, and Howe™</b>&lt;/keyword>
+    &lt;/keywords>
+  &lt;/topicmeta>
+&lt;/keydef>
+</codeblock>
+              <p>When a writer wants to add an instance of a corporate object to a topic, he or she
+                must:</p>
+              <ol id="ol_df2_l43_14">
+                <li> Verify that the corporate keydef map is added to his/her working DITA map
+                  (making those keydef values available) </li>
+                <li>Add a key reference to the appropriate key definition to the working topic.</li>
+              </ol>
+              <codeblock>&lt;image keyref="<b>k_logo_1</b>" placement="break"/></codeblock>
+              <p>
+                <image id="image_qj4_wl3_14" keyref="k_logo_1" placement="break"/>
+              </p>
+              <codeblock>&lt;keyword keyref="<b>k_tm_1</b>"/></codeblock>
+              <p>The following value is inserted as a key reference: <keyword keyref="k_tm_1"/>. </p>
             </stentry>
           </strow>
           <strow>
@@ -104,7 +136,27 @@
               <p>DITA library topics containing ready-to-conref corporate objects</p>
             </stentry>
             <stentry>
-              <p/>
+              <p>One copy of each corporate object lives in a local DITA repository that is
+                accessible to DITA authors and build tools. DITA architects create one element with
+                a unique @id for each corporate object that points to that object in that local DITA
+                repository. These elements are stored in one or more DITA topic library files. </p>
+              <codeblock>&lt;p>&lt;keyword id="kw_tm_1">Dewey, Cheatum, and Howe™&lt;/keyword>&lt;/p>
+&lt;p>&lt;image id="image_logo_1" href="art/ibm_logo_920911.jpg"/>&lt;/p>
+</codeblock>
+              <p>When a writer wants to add an instance of a corporate object to a topic, he or she
+                must:</p>
+              <ol id="ol_iss_sp3_14">
+                <li>Add a conref to the current topic that points to the appropriate library
+                  item.</li>
+              </ol>
+              <codeblock>&lt;p>&lt;image conref="infodesign_library.dita\
+#corporate_library_01/image_logo_1"/>&lt;/p></codeblock>
+              <p><image conref="infodesign_library.dita#corporate_library_01/image_logo_1"
+                  id="image_i1g_rq3_14"/></p>
+              <codeblock>&lt;keyword conref="infodesign_library.dita\
+#corporate_library_01/kw_tm_1"/></codeblock>
+              <p>The following value is inserted as a conref'd keyword element: <keyword
+                  conref="infodesign_library.dita#corporate_library_01/kw_tm_1"/>. </p>
             </stentry>
           </strow>
         </simpletable>
