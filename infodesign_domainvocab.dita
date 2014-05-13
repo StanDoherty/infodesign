@@ -1,8 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_byh_v1w_zn">
-  <title>Domain Vocabularies</title>
+  <title>Domain Vocabulary Modules</title>
   <body>
-    <p>Topic paragraph</p>
+    <p>Domain vocabulary modules provide sets of industry-specific elements/attributes that
+      complement the existing DITA domain vocbulary modules.   </p>
+    <p>
+      <simpletable frame="all" relcolwidth="1.0* 3.88*" id="simpletable_cwg_xpd_c4">
+        <sthead>
+          <stentry>Vocabulary Module</stentry>
+          <stentry>Description</stentry>
+        </sthead>
+        <strow>
+          <stentry>Indexing</stentry>
+          <stentry>The indexing domain provides several new elements for use with indexing. The new
+            elements allow authors to define "See" and "See also" references, and to override the
+            default sort order for a term.</stentry>
+        </strow>
+        <strow>
+          <stentry>Highlight</stentry>
+          <stentry>The typographic elements are used to highlight text with styles (such as bold,
+            italic, and monospace). Never use these elements when a semantically specific element is
+            available. These elements are not intended for use by specializers, and are intended
+            solely for use by authors when no semantically appropriate element is available and a
+            formatting effect is required.</stentry>
+        </strow>
+        <strow>
+          <stentry>Programming</stentry>
+          <stentry>The programming domain elements are used to define the syntax and to give
+            examples of programming
+            languages.<codeblock>apiname (API name), codeblock (code block),
+ codeph (code phrase), option (one of a set of options),
+ parmname (parameter or argument), parml (parameter list),
+ plentry (parameter list entry), pt (parameter term),
+ pd (parameter definition), synph (syntax phrase),
+ syntaxdiagram (syntax diagram)</codeblock></stentry>
+        </strow>
+        <strow>
+          <stentry>Software</stentry>
+          <stentry>The software domain elements are used to describe the operation of a software
+            program.<codeblock>msgph (message phrase), msgblock (message block), 
+msgnum (message number), cmdname (command name),
+varname (variable name), filepath (filename, path, or URI),
+userinput (user input), systemoutput (system output)
+</codeblock></stentry>
+        </strow>
+        <strow>
+          <stentry>User Interface </stentry>
+          <stentry>The user interface domain elements are used to describe the user interface of a
+            software
+            program.<codeblock>uicontrol (user interface control), wintitle (window title),
+menucascade (menu cascade), shortcut (shortcut),
+screen (screen text)</codeblock></stentry>
+        </strow>
+        <strow>
+          <stentry>Utilities </stentry>
+          <stentry>The utilities domain elements represent common features of a language that may
+            not necessarily be semantic, such as image maps.</stentry>
+        </strow>
+        <strow>
+          <stentry>Map Group</stentry>
+          <stentry>The mapgroup domain elements define, group, or reference content.</stentry>
+        </strow>
+        <strow>
+          <stentry>xNAL</stentry>
+          <stentry>The xNAL domain elements represent a subset of the Extensible Name and Address
+            Standard. The domain can be included in any topic type or map, although the
+            implementations provided by OASIS only include it in the bookmap specialization. It is
+            used to encode information about the author or authors of DITA information.</stentry>
+        </strow>
+        <strow>
+          <stentry>Hazard Statement</stentry>
+          <stentry>The hazard statement domain elements represent labeling for product safety
+            hazards that readers need to be aware of. The domain can be included in any topic type
+            or map. Its elements are used to inform readers about potential hazards, consequences,
+            and avoidance
+            strategies.<codeblock>&lt;hazardstatement>, &lt;messagepanel>,
+&lt;typeofhazard>, &lt;consequence>, &lt;howtoavoid>
+&lt;hazardsymbol></codeblock></stentry>
+        </strow>
+        <strow>
+          <stentry>Machine Industry</stentry>
+          <stentry>The machine-industry task domain contains elements for use describing tasks that
+            involve machines or other pieces of hardware.</stentry>
+        </strow>
+        <strow>
+          <stentry>Delay Resolution </stentry>
+          <stentry>The delayed conref resolution domain provides several elements for use when using
+            DITA in situations that enable delayed or run time resolution of conref. The elements
+            allow users to resolve some conref values statically, while delaying others for later
+            resolution.</stentry>
+        </strow>
+        <strow>
+          <stentry>Abbreviate</stentry>
+          <stentry>The abbreviate domain element is used to represent a reference to a term that may
+            appear in an abbreviated form (often an acronym).</stentry>
+        </strow>
+        <strow>
+          <stentry>Glossref </stentry>
+          <stentry>The glossref domain elements are convenience elements that are used to reference
+            glossary topics or to reference multiple topics in a single collection.</stentry>
+        </strow>
+        <strow>
+          <stentry>Classify</stentry>
+          <stentry>The classification domain elements are used to identify subjects covered by the
+            content</stentry>
+        </strow>
+        <strow>
+          <stentry>Learning</stentry>
+          <stentry>The learning domain elements represent the base elements that are used to create
+            learning and training content.</stentry>
+        </strow>
+        <strow>
+          <stentry>Learning Interaction Base </stentry>
+          <stentry>The learning interaction base domain defines an "abstract" base type for all
+            learning assessments.</stentry>
+        </strow>
+        <strow>
+          <stentry>Learning Map</stentry>
+          <stentry>The learning and training map domain organizes groups of topics as learning
+            objects</stentry>
+        </strow>
+        <strow>
+          <stentry>Learning Metadata </stentry>
+          <stentry>The learning and training metadata domain describes specific characteristics of
+            the learning content.</stentry>
+        </strow>
+      </simpletable>
+    </p>
   </body>
 </topic>

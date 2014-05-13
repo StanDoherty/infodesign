@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hv2_kkd_c4">
+  <title>DITA Module Types</title>
+  <body>
+    <p>In DITA, a "module" is an XML file that defines a collection of ready-to-integrate XML
+      resources:</p>
+    <ul id="ul_hfs_12d_c4">
+      <li><i>Domain vocabulary modules</i>: Specify collections of new elements (and associated
+        attributes) that architects can add to existing or new topic types. <p>For example, the SVG
+          domain vocabulary module (<msgph>svgDomain.mod/.ent</msgph>) in DITA 1.3 specifies the two
+          elements <msgph>&lt;svg_container></msgph> and <msgph>&lt;svgref></msgph>. Architects can
+          make these elements available to all the DITA topic types, some of them, or none of them.
+          </p><p>The DITA 1.3 spec notes that domain vocabulary modules are a <i>set of element
+            types or an attribute type that supports a specific subject or functional area. Element
+            types or attribute types in a domain can be integrated with topic types or map types to
+            enhance semantic support for particular kinds of content. For example, the structural
+            type &lt;topic> declares the &lt;keyword> element; when integrated with a domain for
+            describing user interfaces, new keyword specializations (such as &lt;wintitle>) become
+            available wherever &lt;keyword> was allowed in the original structural
+        type.</i></p></li>
+      <li><i>Structural modules</i>: Specify a unique set of elements/attributes that architects
+        (typically) use to define new, specialized topic types or new, specialized building blocks.
+          <p>For example, the troubleshooting topic module
+            (<msgph>troubleshooting.dtd/.ent/.mod</msgph>) in DITA 1.3 specifies a topic type that
+          can be used as-is or specialized further. </p></li>
+      <li><i>Constraint modules</i>: Specify an additional set of restrictions to be imposed on the
+        number and behavior of available elements to be included in a topic authoring shell.<p>For
+          example, if an architect does not want every writer to see all 65 elements currently
+          available within the default DITA <msgph>&lt;section></msgph> element, he or she could
+          develop a constraint module (<msgph>mySection-constraint.mod</msgph>) that specifies which
+          subset of the 65 default elements will be available to a writer using a topic authoring
+          shell that includes the constrained <msgph>&lt;mySection></msgph> element versus the
+          default <msgph>&lt;section></msgph> element. </p>
+      </li>
+    </ul>
+  </body>
+</topic>

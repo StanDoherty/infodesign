@@ -6,7 +6,10 @@
   <topicref href="infodesign_case_logic.dita"/>
  </topicref>
  <topicref href="infodesign_corporateinfo.dita"/>
- <topicref href="infodesign_domainvocab.dita"/>
+ <topicref href="infodesign_domainvocab.dita">
+  <topicref href="infodesign_module-types.dita"/>
+  <topicref href="infodesign_dita-generator.dita"/>
+ </topicref>
  <topichead navtitle="Keydef Maps (resource only)"/>
  <topicref href="mapgen_keydefs_corporate.ditamap" format="ditamap"/>
 </map>

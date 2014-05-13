@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>MathWorks Key Trademarks</title>
+ 
+ 
+ <keydef keys="k_tm_1"><topicmeta><keywords><keyword>Aerospace Blockset™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_2"><topicmeta><keywords><keyword>Aerospace Toolbox</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_3"><topicmeta><keywords><keyword>Bioinformatics Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_4"><topicmeta><keywords><keyword>Cody™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_5"><topicmeta><keywords><keyword>Cody™ Coursework™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_6"><topicmeta><keywords><keyword>Communications System Toolbox™ </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_7"><topicmeta><keywords><keyword>Computer Vision System Toolbox™ </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_8"><topicmeta><keywords><keyword>Control System Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_9"><topicmeta><keywords><keyword>Curve Fitting Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_10"><topicmeta><keywords><keyword>Data Acquisition Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_11"><topicmeta><keywords><keyword>Database Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_12"><topicmeta><keywords><keyword>Datafeed Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_13"><topicmeta><keywords><keyword>DSP System Toolbox™ </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_14"><topicmeta><keywords><keyword>Econometrics Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_15"><topicmeta><keywords><keyword>Embedded Coder®   </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_16"><topicmeta><keywords><keyword>Embedded MATLAB®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_17"><topicmeta><keywords><keyword>Filter Design HDL Coder™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_18"><topicmeta><keywords><keyword>Financial Instruments Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_19"><topicmeta><keywords><keyword>Financial Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_20"><topicmeta><keywords><keyword>Fixed-Point Designer™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_21"><topicmeta><keywords><keyword>Fuzzy Logic Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_22"><topicmeta><keywords><keyword>Gauges Blockset™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_23"><topicmeta><keywords><keyword>Global Optimization Toolbox</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_24"><topicmeta><keywords><keyword>Handle Graphics®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_25"><topicmeta><keywords><keyword>HDL Coder™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_26"><topicmeta><keywords><keyword>HDL Verifier™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_27"><topicmeta><keywords><keyword>Image Acquisition Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_28"><topicmeta><keywords><keyword>Image Processing Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_29"><topicmeta><keywords><keyword>Instrument Control Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_30"><topicmeta><keywords><keyword>L-shaped Membrane logo (graphic only)®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_31"><topicmeta><keywords><keyword>Mapping Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_32"><topicmeta><keywords><keyword>MathWorks®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_33"><topicmeta><keywords><keyword>MATLAB®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_34"><topicmeta><keywords><keyword>MATLAB® Builder™ EX</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_35"><topicmeta><keywords><keyword>MATLAB® Builder™ JA</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_36"><topicmeta><keywords><keyword>MATLAB® Builder™ NE</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_37"><topicmeta><keywords><keyword>MATLAB® Coder™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_38"><topicmeta><keywords><keyword>MATLAB® Compiler™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_39"><topicmeta><keywords><keyword>MATLAB® Connector™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_40"><topicmeta><keywords><keyword>MATLAB® Distributed Computing Server™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_41"><topicmeta><keywords><keyword>MATLAB® Mobile™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_42"><topicmeta><keywords><keyword>MATLAB® Production Server™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_43"><topicmeta><keywords><keyword>MATLAB® Report Generator™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_44"><topicmeta><keywords><keyword>Model Predictive Control Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_45"><topicmeta><keywords><keyword>Model-Based Calibration Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_46"><topicmeta><keywords><keyword>Model-Based Design Maturity Framework™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_47"><topicmeta><keywords><keyword>Model-Based Design Process Assessment™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_48"><topicmeta><keywords><keyword>Neural Network Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_49"><topicmeta><keywords><keyword>OPC Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_50"><topicmeta><keywords><keyword>Optimization Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_51"><topicmeta><keywords><keyword>Parallel Computing Toolbox™ </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_52"><topicmeta><keywords><keyword>Partial Differential Equation Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_53"><topicmeta><keywords><keyword>Phased Array System Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_54"><topicmeta><keywords><keyword>Polyspace®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_55"><topicmeta><keywords><keyword>Polyspace® Bug Finder™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_56"><topicmeta><keywords><keyword>Polyspace® Client™ for Ada</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_57"><topicmeta><keywords><keyword>Polyspace® Client™ for C/C++</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_58"><topicmeta><keywords><keyword>Polyspace® Code Prover™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_59"><topicmeta><keywords><keyword>Polyspace® Model Link™ SL </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_60"><topicmeta><keywords><keyword>Polyspace® Model Link™ TL</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_61"><topicmeta><keywords><keyword>Polyspace® Server™ for Ada</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_62"><topicmeta><keywords><keyword>Polyspace® Server™ for C/C++</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_63"><topicmeta><keywords><keyword>Polyspace® UML Link™ RH</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_64"><topicmeta><keywords><keyword>Product Names</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_65"><topicmeta><keywords><keyword>Real-Time Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_66"><topicmeta><keywords><keyword>Real-Time Windows Target™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_67"><topicmeta><keywords><keyword>RF Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_68"><topicmeta><keywords><keyword>Robust Control Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_69"><topicmeta><keywords><keyword>Signal Processing Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_70"><topicmeta><keywords><keyword>SimBiology®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_71"><topicmeta><keywords><keyword>SimDriveline™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_72"><topicmeta><keywords><keyword>SimElectronics®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_73"><topicmeta><keywords><keyword>SimEvents®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_74"><topicmeta><keywords><keyword>SimHydraulics®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_75"><topicmeta><keywords><keyword>SimMechanics™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_76"><topicmeta><keywords><keyword>SimPowerSystems™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_77"><topicmeta><keywords><keyword>SimRF™ </keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_78"><topicmeta><keywords><keyword>Simscape™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_79"><topicmeta><keywords><keyword>Simulink®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_80"><topicmeta><keywords><keyword>Simulink® 3D Animation™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_81"><topicmeta><keywords><keyword>Simulink® Code Inspector™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_82"><topicmeta><keywords><keyword>Simulink® Coder™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_83"><topicmeta><keywords><keyword>Simulink® Control Design™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_84"><topicmeta><keywords><keyword>Simulink® Design Optimization™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_85"><topicmeta><keywords><keyword>Simulink® Design Verifier™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_86"><topicmeta><keywords><keyword>Simulink® PLC Coder™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_87"><topicmeta><keywords><keyword>Simulink® Report Generator™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_88"><topicmeta><keywords><keyword>Simulink® Verification and Validation™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_89"><topicmeta><keywords><keyword>Spreadsheet Link™ EX</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_90"><topicmeta><keywords><keyword>Stateflow®</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_91"><topicmeta><keywords><keyword>Statistics Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_92"><topicmeta><keywords><keyword>Symbolic Math Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_93"><topicmeta><keywords><keyword>System Identification Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_94"><topicmeta><keywords><keyword>System object™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_95"><topicmeta><keywords><keyword>SystemTest™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_96"><topicmeta><keywords><keyword>Trading Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_97"><topicmeta><keywords><keyword>Trendy™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_98"><topicmeta><keywords><keyword>Vehicle Network Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_99"><topicmeta><keywords><keyword>Wavelet Toolbox™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_100"><topicmeta><keywords><keyword>xPC Target™</keyword></keywords></topicmeta></keydef>
+ <keydef keys="k_tm_101"><topicmeta><keywords><keyword>xPC Target™ Embedded Option™</keyword></keywords></topicmeta></keydef>
+ 
+ 
+ 
+</map>
