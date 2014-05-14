@@ -10,6 +10,7 @@
   <topicref href="infodesign_module-types.dita"/>
   <topicref href="infodesign_dita-generator.dita"/>
  </topicref>
+ <topicref href="infodesign_filtering.dita"/>
  <topichead navtitle="Keydef Maps (resource only)"/>
  <topicref href="mapgen_keydefs_corporate.ditamap" format="ditamap"/>
 </map>

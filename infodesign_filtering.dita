@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ogj_1jg_c4">
+  <title>Content Filtering</title>
+  <body>
+    <p>For DITA implementers, most of the design issues surrounding content filtering focus upon
+        <i>where</i> you manage filtering attribute values more than <i>what</i> you choose to
+      filter.   </p>
+    <section>
+      <title>Overview: Basic DITA Filtering</title>
+      <p>DITA reserves four element attributes for filtering content: @audience, @platform,
+        @otherprops, and @props. If you add a particular value for one of these attributes (for
+        example <msgph>audience="admin"</msgph>), you can selectively filter (exclude) any elements
+        from generated output by specifying a behavior for in a separate XML file named the DITAVAL
+        rules file. For example, to exclude any elements that contain the attribute value
+          <msgph>audience="admin"</msgph>, you would specify the following rule in a DITAVAL rules
+        file.</p>
+      <codeblock>&lt;prop att="audience" val="admin" action="exclude"/></codeblock>
+      <p>In DITA 1.0, 1.1, and 1.2, you were restricted to using only one DITAVAL rules file per
+        processing job. To generate three different sets of filtered topics, you would need to run
+        three separate processing jobs and to specify a different DITAVAL rules file for each of
+        those jobs. </p>
+    </section>
+    <section>
+      <title>DITA 1.3 Branch Filtering</title>
+      <p>In DITA 1.3, you can use more than one DITAVAL rules file to control content filtering at
+        various branches of a DITA map. For example, if I wanted to filter content within a
+        particular branch of a DITA map, I could add a &lt;ditavalref> element to a branch of a DITA
+        map.</p>
+      <codeblock>&lt;map>
+  &lt;topicref href="sampleBranch.dita" audience="admin">
+     &lt;topicmeta>
+       &lt;navtitle>Navigation title for branch&lt;/navtitle>
+     &lt;/topicmeta>
+     <b>&lt;ditavalref href="conditions.ditaval"/></b>
+     &lt;topicref href="insideBranch.dita" platform="win linux mac"/>
+  &lt;/topicref>
+  &lt;topicref href="outsideBranch.dita"/>
+&lt;/map></codeblock>
+      <p>The DITAVAL rules specified in <msgph>conditions.ditaval</msgph> affect content filtering
+        within the branch of the DITA map that begins with the reference to
+          <msgph>sampleBranch.dita</msgph> and ends with its child <msgph>insideBranch.dita</msgph>.
+        Content in the referenced topic <msgph>outsideBranch.dita</msgph> is outside the scope of
+        the <msgph>sampleBranch.dita</msgph> branch and is, therefore, unaffected by any filtering
+        rules specified in <msgph>conditions.ditaval</msgph>. Branch filtering will allow content
+        developers to reuse topics within and across branches of the same DITA map.   </p>
+      <p>This feature may not be implemented in the DITA Open Toolkit for some time, but it is worth
+        noting as a major enhancement to content filtering. </p>
+    </section>
+    <section>
+      <title>Filtering Armageddon</title>
+      <p>Once content developers get a taste for filtering content between and within topics, the
+        desire to develop ever-more-complex and ever-more-granular collections of filtering
+        attribute values is overwhelming. The long-term penalties for maintaining and debugging
+        filtering attribute values was never clear to me for the first DITA implementations that I
+        managed. When I inherited several domains from another writer and realized that the
+        filtering attribute values scattered throughout his maps and topics was not documented, I
+        had to stop my writing to reconstruct the logic that the previous writer used when defining
+        and applying filtering attribute values. In retrospect, it seems obvious that each writer
+        should have been documenting these values <i>somewhere</i> -- be they in DITA map comments
+        or in DITAVAL rules files. Once you have completed some experimentation in pilot projects,
+        the process of developing durable, company-wide filtering attribute standards is
+          <i>never</i> bottom up. Perhaps the most important bureaucracy you can institute early in
+        your migration is a filtering review board. Start with a small set of no-brainer values for
+        a limited number of filtering attributes and then keep the bar for accepting new values very
+        high. </p>
+    </section>
+    <section>
+      <title>Options For Managing Content Filtering Attribute Values</title>
+      <p>Fortunately DITA provides several useful mechanisms for managing filtering attribute values
+        across a company. These are not exclusive. </p>
+      <ul id="ul_dsq_jxg_c4">
+        <li>
+          <p><i>External Specifications</i>: The least effective way to manage filtering attribute
+            values is to specify them in some external list (spreadsheet, wiki, web page) and hope
+            that all content developers adhere to these guidelines. If this is the only option,
+            teams can develop automated checks in XQuery or some other tool to identify deviations
+            from the standards. </p>
+        </li>
+        <li>
+          <p><i>Flat subjectScheme Map Specifications</i>: In addition to conventional content maps,
+            DITA supports a specialized form of maps that contains only metadata -- subjectScheme
+            maps. Although these subjectScheme maps can support sophisticated hierarchical
+            taxonomies, they are most commonly used to capture sets of controlled values for
+            attributes. </p>
+          <p>For example, if you wanted every content developers in your department to insert only
+            the values "admin" or "user" for the @audience attribute, you can develop a flat
+            subjectScheme map that looks as follows. </p>
+          <codeblock>&lt;subjectScheme>
+  &lt;subjectdef keys="audiencetypes"
+    &lt;subjectdef keys="admin"/>
+    &lt;subjectdef keys="user"/>
+  &lt;/subjectdef>
+
+  &lt;enumerationdef>
+    &lt;attributedef name="audience"/>
+    &lt;subjectdef keyref="audiencetypes"/>
+  &lt;/enumerationdef>
+&lt;/subjectScheme></codeblock>
+          <p>The &lt;subjectdef> group named "audiencetypes" specifies that the only allowable
+            attribute values are "admin" and "user". This is the most simple form of controlled
+            values in DITA. The &lt;enumerationdef> group specifies that this same &lt;subjectdef>
+            group named "audiencetypes" should be bound exclusively to the @audience attribute. To
+            apply this simple set of controlled values to your documentation set, you must add a
+            reference to this subjectScheme map to every root content map. Once a root map can
+            access the controlled values specified in this referenced subjectScheme map, content
+            developers will not be able to insert any value other than "admin" or "user" for any
+            instance of the @audience attribute.    </p>
+          <note>If you develop one set of read-only subjectScheme maps for your Department,
+            monitoring the application of these controlled values is fairly straight-forward.
+          </note>
+        </li>
+        <li>
+          <p><i>Hierarchical subjectScheme Map Specifications</i>: Beyond flat (peer-to-peer) sets
+            of controlled values for filtering attributes, you can also specify simple hierarchies
+            of values. The following example extends the flat controlled values "admin" and "user"
+            to include subordinate values.  </p>
+          <codeblock>&lt;subjectScheme>
+  &lt;subjectdef keys="audiencetypes"
+    &lt;subjectdef keys="admin">
+<b>      &lt;subjectdef keys="admin-network"/>
+      &lt;subjectdef keys="admin-security"/>
+</b>    &lt;/subjectdef>
+    &lt;subjectdef keys="user">
+<b>      &lt;subjectdef keys="user-casual"/>
+      &lt;subjectdef keys="user-formal"/>
+</b>    &lt;/subjectdef>
+  &lt;/subjectdef>
+
+  &lt;enumerationdef>
+    &lt;attributedef name="audience"/>
+    &lt;subjectdef keyref="audiencetypes"/>
+  &lt;/enumerationdef>
+&lt;/subjectScheme></codeblock>
+          <p>With this hierarchy in place, you can filter tactically on
+              <msgph>audience="admin-security"</msgph> or on the parent value
+              <msgph>audience="admin"</msgph>. In the latter case, any element with the attribute
+            values of <msgph>audience="admin"</msgph>, <msgph>audience="admin-network"</msgph>, or
+              <msgph>audience="admin-security"</msgph> would be affected by the following DITAVAL
+            rule statement.</p>
+          <codeblock>&lt;prop att="audience" val="admin" action="exclude"/></codeblock>
+          <p>Hierarchical subjectScheme maps are powerful <i>if</i> your filtering strategy supports
+            hierarchy. </p>
+        </li>
+        <li>
+          <p>Beyond hierarchies defined by simple positioning of elements in a subjectScheme map,
+            you can create and use formal taxonomies. DITA subjectScheme maps support the elements
+            &lt;hasNarrower>, &lt;hasPart>, &lt;hasKind>, &lt;hasInstance>, and &lt;hasRelated> to
+            define the relationship between container elements ("city" and "state" below) and their
+            subordinate elements ("la", "nyc", and "sf"). </p>
+          <codeblock>&lt;subjectScheme>
+<b>  &lt;hasInstance>
+</b>    &lt;subjectdef keys="city" navtitle="City">
+       &lt;subjectdef keys="la" navtitle="Los Angeles"/>
+       &lt;subjectdef keys="nyc" navtitle=New York City"/>
+       &lt;subjectdef keys="sf" navtitle="San Francisco">
+    &lt;/subjectdef>
+    &lt;subjectdef keys="state" navtitle="State">
+       &lt;subjectdef keys="ca" navtitle="California"/>
+       &lt;subjectdef keys="ny" navtitle=New York"/>
+    &lt;/subjectdef>
+<b>  &lt;/hasInstance>
+</b><b>  &lt;hasPart>
+ </b>     &lt;subjectdef keys="place" navtitle="Place">
+        &lt;subjectdef keys="ca">
+          &lt;subjectdef keys="la">
+          &lt;subjectdef keys="sf">
+      &lt;/subjectdef>
+      &lt;subjectdef keys="ny">
+         &lt;subjectdef keys="nyc">
+      &lt;/subjectdef>
+<b>  &lt;/hasPart>
+</b>&lt;/subjectScheme></codeblock>
+          <p>Although the DITA Open Toolkit and DITA-compliant editors can parse these formal
+            subjectScheme taxonomies, they do not process them as hierarchies. Various CCMSs do
+            import these taxonomies into their database environment and use them to process content.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <title>Conclusion</title>
+      <p>DITA can support a variety of mechanisms for managing controlled values and simple
+        hierarchies for filtering attribute values. Experimenting with each mechanism using your own
+        content appears to be more complicated than it is. In fact, the costs of <i>not</i>
+        experimenting with these mechanisms are far greater than having to reimplement them in a
+        production context.  </p>
+    </section>
+  </body>
+</topic>

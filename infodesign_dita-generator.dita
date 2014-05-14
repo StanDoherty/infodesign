@@ -14,8 +14,8 @@
         modified (specialized).<p>
           <image placement="break" href="art/png_generator_01.png" id="image_xb3_lnd_c4"/>
         </p></li>
-      <li>A set of domain vocabularty modules that you would lie to include in your new authoring
-        "shell". <p>
+      <li>A set of domain vocabularty modules that you would like to include in your new authoring
+        "shell." <p>
           <image placement="break" href="art/png_generator_02.png" id="image_nv4_gmd_c4"/>
         </p></li>
       <li>Some information about naming your new authoring "shell."<p>
@@ -23,7 +23,7 @@
         </p></li>
     </ol>
     <p>DITA Generator collects all this information and generates a ready-to-use authoring "shell"
-      (DTD) that contains only what you specified to be included. </p>
+      (DTD) that contains only what you have specified to be included. </p>
     <p><image href="art/png_generator_04.png" id="image_xxt_f4d_c4"/></p>
     <p>The DITA Generator tool exposes the way that all DITA specializations are constructed from
       underlying domain vocabulary, structural, and constraint modules. </p>

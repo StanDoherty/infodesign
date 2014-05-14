@@ -10,15 +10,15 @@
         attributes) that architects can add to existing or new topic types. <p>For example, the SVG
           domain vocabulary module (<msgph>svgDomain.mod/.ent</msgph>) in DITA 1.3 specifies the two
           elements <msgph>&lt;svg_container></msgph> and <msgph>&lt;svgref></msgph>. Architects can
-          make these elements available to all the DITA topic types, some of them, or none of them.
-          </p><p>The DITA 1.3 spec notes that domain vocabulary modules are a <i>set of element
-            types or an attribute type that supports a specific subject or functional area. Element
-            types or attribute types in a domain can be integrated with topic types or map types to
-            enhance semantic support for particular kinds of content. For example, the structural
-            type &lt;topic> declares the &lt;keyword> element; when integrated with a domain for
-            describing user interfaces, new keyword specializations (such as &lt;wintitle>) become
-            available wherever &lt;keyword> was allowed in the original structural
-        type.</i></p></li>
+          make these elements available to all the DITA topic types, to some of them, or to none of
+          them. </p><p>The DITA 1.3 spec notes that domain vocabulary modules are a <i>set of
+            element types or an attribute type that supports a specific subject or functional area.
+            Element types or attribute types in a domain can be integrated with topic types or map
+            types to enhance semantic support for particular kinds of content. For example, the
+            structural type &lt;topic> declares the &lt;keyword> element; when integrated with a
+            domain for describing user interfaces, new keyword specializations (such as
+            &lt;wintitle>) become available wherever &lt;keyword> was allowed in the original
+            structural type.</i></p></li>
       <li><i>Structural modules</i>: Specify a unique set of elements/attributes that architects
         (typically) use to define new, specialized topic types or new, specialized building blocks.
           <p>For example, the troubleshooting topic module
@@ -29,9 +29,9 @@
           example, if an architect does not want every writer to see all 65 elements currently
           available within the default DITA <msgph>&lt;section></msgph> element, he or she could
           develop a constraint module (<msgph>mySection-constraint.mod</msgph>) that specifies which
-          subset of the 65 default elements will be available to a writer using a topic authoring
-          shell that includes the constrained <msgph>&lt;mySection></msgph> element versus the
-          default <msgph>&lt;section></msgph> element. </p>
+          of the 65 default elements will be available to a writer using a topic authoring shell
+          that includes the constrained <msgph>&lt;mySection></msgph> element versus the default
+            <msgph>&lt;section></msgph> element. </p>
       </li>
     </ul>
   </body>
