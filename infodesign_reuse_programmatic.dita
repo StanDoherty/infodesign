@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_yfc_g5d_g4">
+  <title>Design Issues For Programmatic Content Reuse</title>
+  <body>
+    <p>A significant percentage of the reference information that technical writers capture and
+      maintain in their DITA topics is developed and maintained separately and primarily in
+      engineering source files. Developing strategies for extracting that information from
+      engineering sources automatically and iteratively converting into useful DITA resources is the
+      essence of programmatic reuse. </p>
+    <section>
+      <title>Opportunities</title>
+      <p>Companies engaged in programmatic reuse investigate the following areas as opportunities. </p>
+      <ul id="ul_vjs_tn2_g4">
+        <li>API reference information</li>
+        <li>CLI command reference information</li>
+        <li>Object-oriented specifications and command information</li>
+        <li>HTTP (RESTful) interface reference information</li>
+        <li>GUI text (resourced)</li>
+        <li>GUI graphics (including automated screen shots)</li>
+        <li>Error messages</li>
+        <li>HTTP messages</li>
+        <li>CSH Help IDs</li>
+      </ul>
+    </section>
+    <section>
+      <title>Design Issues</title>
+      <p>Programmatic reuse differs in its issues from authored reuse in the following respects:</p>
+      <ul id="ul_jrw_l42_g4">
+        <li><i>Library component granularity</i>: Human-authored library components can be fairly
+          granular, but they rarely get smaller than the section, reference table, or block list.
+          The cost to writers of maintaining libraries consisting paragraph and phrase snippets is
+          prohibitive. Even cruel. Programmatically maintained libraries can support significantly
+          more granular information -- including many thousands of phrases and keywords extracted
+          from engineering source files. Once a writer has created topics that reference these
+          highly granular resources, DITA ensures that subsequent auto-generated updates to those
+          engineering-extracted libraries will be referenced correctly. Maintenance is much less of
+          an issue. </li>
+        <li><i>Component ID management</i>: From automated build (extraction) to automated build,
+          the IDs associated with library components must be identical for DITA references to those
+          auto-generated components to resolve. This means that you need to develop real specs and
+          to engage real engineers toward the development of these automated conversion tools. </li>
+        <li><i>Human-authored content overrides</i>: Not all content stored in engineering source
+          files is ready to pass through to paying customers. DITA provides a way (conref/keyref
+          PUSH) that allows human-authored context to replace or to supplement content generated
+          from extraction tools. Creating guidelines about when and how to use this PUSH content can
+          be very tricky.  </li>
+      </ul>
+    </section>
+  </body>
+</topic>

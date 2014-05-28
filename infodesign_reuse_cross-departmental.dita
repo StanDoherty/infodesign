@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ahj_k5d_g4">
+  <title>Design Issues for Cross-Departmental Content Reuse</title>
+  <body>
+    <p>To date, DITA has created yet another set of barriers to reusing information across
+      departments because DITA is a highly complex authoring environment. It has tremendous payoffs
+      within a silo, but not across silos. The Lightweight DITA project under development will
+      address many of the barriers to collaboration and reuse with DITA, but it will not address all
+      of them. </p>
+    <p>When developing a DITA infrastructure, consider the following enablers and inhibitors to
+      cross-department reuse:</p>
+    <ul id="ul_eyp_tq2_g4">
+      <li>
+        <p><i>Import filters</i>: Test and characterize formally the characteristics of filters that
+          claim to import content from other applications into DITA, e.g. DITA4Publishers
+          Word-to-DITA transformation.</p>
+      </li>
+      <li>
+        <p><i>Export filters</i>: Test and document all the transformation filters that export your
+          DITA content into other architectures and formats that are consumable by other
+          departments. Some examples:</p>
+        <ul id="ul_bnp_3r2_g4">
+          <li><i>DITA-to-RTF</i>: A crappy transform that is part of the DITA-OT.</li>
+          <li><i>DITA-to-XHTML</i>: A robust transform that is part of the DITA-OT.</li>
+          <li><i>DITA-to-ODT</i>: A robust transform that is part of the DITA-OT.</li>
+          <li><i>DITA-to-InDesign</i>: A robust transform that is part of the DITA4Publishers
+            extension.</li>
+        </ul>
+      </li>
+      <li><i>Hybrid XML structures</i>: Authoring in a rich format that can be converted easily into
+        multiple, less-robust formats is all the rage. Basic topic types in markdown, Lightweight
+        DITA, and HTML5 can be processed into DITA and into other formats with minimal difficulty.
+      </li>
+    </ul>
+  </body>
+</topic>

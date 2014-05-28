@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ntv_hsd_g4">
+  <title>Designing Content Reuse</title>
+  <body>
+    <p>Although all forms of DITA content reuse leverage the same underlying mechanics, each form
+      presents distinct challenges.</p>
+    <p>
+      <image href="art/svg_reuse.svg" id="image_a43_wd2_g4" placement="break" height="1.44in"
+        width="4.11in"/>
+    </p>
+    <section>
+      <title>Definitions</title>
+      <dl>
+        <dlentry>
+          <dt>DITAReuse Mechanics</dt>
+          <dd>
+            <p>DITA offers several robust technologies designed to support content reuse. </p>
+            <ul id="ul_r1m_ff2_g4">
+              <li><i>Maps</i>: reusing one map in multiple other maps with content filters</li>
+              <li><i>Maps</i>: reusing one topic in multiple contexts with multiple content filters </li>
+              <li><i>Topicsets</i>: reusing named collections of map references to topics</li>
+              <li><i>Content libraries</i>: reusing named blocks of content from topics</li>
+              <li><i>Direct content referencing (conrefs)</i>: URI-based reuse of referenced content
+                (library elements, topics, or maps)</li>
+              <li><i>Indirect content referencing (keyrefs)</i>: Key-based reuse of referenced
+                content (library elements, topics, or maps)</li>
+            </ul>
+            <p>That said, the flexibility and power of these mechanics tend to obscure how they are
+              used in order to support the different forms of reuse. </p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Authored Content Reuse</dt>
+          <dd>
+            <p>Strategies for reusing content developed and maintaned by human beings (authors),
+              e.g. shared topics, shared content libraries, or keyword libraries.</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Programmatic Content Reuse</dt>
+          <dd>
+            <p>Strategies for reusing content extracted from engineering sources by computer
+              applications, e.g. API libraries, message libraries, GUI resource text and
+              graphics.</p>
+          </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Cross-Department Reuse</dt>
+          <dd>
+            <p>Strategies for exporting, importing, or reusing content between organizations
+              deploying different information architectures and tools. </p>
+          </dd>
+        </dlentry>
+      </dl>
+    </section>
+  </body>
+</topic>

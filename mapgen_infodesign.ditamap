@@ -11,6 +11,12 @@
   <topicref href="infodesign_dita-generator.dita"/>
  </topicref>
  <topicref href="infodesign_filtering.dita"/>
+ <topicref href="infodesign_reuse_intro.dita">
+  <topicref href="infodesign_reuse_mechanics.dita"/>
+  <topicref href="infodesign_reuse_authored.dita"/>
+  <topicref href="infodesign_reuse_programmatic.dita"/>
+  <topicref href="infodesign_reuse_cross-departmental.dita"/>
+ </topicref>
  <topichead navtitle="Keydef Maps (resource only)"/>
  <topicref href="mapgen_keydefs_corporate.ditamap" format="ditamap"/>
 </map>

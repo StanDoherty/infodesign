@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_smy_4td_g4">
+  <title>Design Issues For Authored Content Reuse</title>
+  <body>
+    <p>The following design issues affect reuse positively or adversely.</p>
+    <p>
+      <simpletable frame="all" relcolwidth="1.0* 1.35* 1.18*" id="simpletable_mpj_y32_g4">
+        <sthead>
+          <stentry>Category</stentry>
+          <stentry>Reuse Enabler</stentry>
+          <stentry>Reuse Inhibitor</stentry>
+        </sthead>
+        <strow>
+          <stentry>
+            <p>Topic granularity</p>
+          </stentry>
+          <stentry>
+            <p>Smaller granularity  (&lt; 200 words)</p>
+          </stentry>
+          <stentry>
+            <p>Larger granularity (> 200 words)</p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Library component granularity </p>
+          </stentry>
+          <stentry>
+            <p>Smaller (within reason)</p>
+          </stentry>
+          <stentry>
+            <p>Larger (within reason)</p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Information typing (topic types)</p>
+          </stentry>
+          <stentry>
+            <p>Highly consistent information (topic) typing</p>
+          </stentry>
+          <stentry>
+            <p>Inconsistent or non-intentional informatin (topic) typing</p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Referencing mechanics</p>
+          </stentry>
+          <stentry>
+            <p>Indirect (keydef) mechanics </p>
+          </stentry>
+          <stentry>
+            <p>Direct (URI) mechanics</p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Content filtering</p>
+          </stentry>
+          <stentry>
+            <p>Formal guidelines and conrteolled values for attribute-level contenht filtering</p>
+          </stentry>
+          <stentry>
+            <p>Informal or inconsistent attribute-level filtering</p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Content rreuse zones</p>
+          </stentry>
+          <stentry>
+            <p>Formal per-domain guidelines for determining high-priority and low-priority reuse
+              across related domains</p>
+          </stentry>
+          <stentry>
+            <p>Informal or inconsistent guidelines for prioritizing content to be reused across
+              related domains </p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Incremental reuse goals</p>
+          </stentry>
+          <stentry>
+            <p>Formal goals (schedule) for reuse granularity:</p>
+            <ul id="ul_d1z_xk2_g4">
+              <li>Topic-level reuse only (within reuse zones)</li>
+              <li>Map topicset reuse</li>
+              <li>Topic-level reuse only (across reuse zones)</li>
+              <li>Library-level reuse</li>
+              <li>In-topic content filtering</li>
+            </ul>
+          </stentry>
+          <stentry>
+            <p>No formal goals (schedule) </p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>Reuse profiling tools</p>
+          </stentry>
+          <stentry>
+            <p>Used rigorously toward data-driven profiles of reusable content</p>
+          </stentry>
+          <stentry>
+            <p>Not used </p>
+          </stentry>
+        </strow>
+        <strow>
+          <stentry>
+            <p>CCMS</p>
+          </stentry>
+          <stentry>
+            <p>CCMS adoption</p>
+          </stentry>
+          <stentry>
+            <p>CCMS avoidance</p>
+          </stentry>
+        </strow>
+      </simpletable>
+    </p>
+  </body>
+</topic>

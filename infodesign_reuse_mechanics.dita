@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_fmx_ftd_g4">
+  <title>The Mechanics of Reuse in DITA</title>
+  <body>
+    <p>DITA offers several robust technologies designed to support content reuse. </p>
+    <section>
+      <title><i>Maps</i>: reusing one map in multiple other maps with content filters</title>
+      <p>details tbd</p>
+    </section>
+    <section>
+      <title><i>Maps</i>: reusing one topic in multiple contexts with multiple content filters </title>
+      <p>details tbd</p>
+    </section>
+    <section>
+      <title><i>Topicsets</i>: reusing named collections of map references to topics</title>
+      <p>details tbd</p>
+    </section>
+    <section>
+      <title><i>Content libraries</i>: reusing named blocks of content from topics</title>
+      <p>details tbd</p>
+    </section>
+    <section>
+      <title><i>Direct content referencing (conrefs)</i>: URI-based reuse of referenced content
+        (library elements, topics, or maps)</title>
+      <p>details tbd</p>
+    </section>
+    <section>
+      <title><i>Indirect content referencing (keyrefs)</i>: Key-based reuse of referenced content
+        (library elements, topics, or maps)</title>
+      <p>details tbd</p>
+    </section>
+  </body>
+</topic>
