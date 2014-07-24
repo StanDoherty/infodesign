@@ -17,6 +17,7 @@
   <topicref href="infodesign_reuse_programmatic.dita"/>
   <topicref href="infodesign_reuse_cross-departmental.dita"/>
  </topicref>
+ <topicref href="infodesign_referencing_intro.dita"/>
  <topichead navtitle="Keydef Maps (resource only)"/>
  <topicref href="mapgen_keydefs_corporate.ditamap" format="ditamap"/>
 </map>
