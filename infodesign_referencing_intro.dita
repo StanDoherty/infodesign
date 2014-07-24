@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_klq_hrf_k4">
+  <title>Referencing and Navigation</title>
+  <body>
+    <p></p>
+    <section>
+      <title>Referencing Mechanics</title>
+      <p/>
+      <dl>
+        <dlhead>
+          <ddhd>xx</ddhd>
+        </dlhead>
+        <dlentry>
+          <dt>URI-based Referencing</dt>
+          <dd/>
+        </dlentry>
+        <dlentry>
+          <dt>Key-based Referencing</dt>
+          <dd/>
+        </dlentry>
+      </dl>
+    </section>
+    <section>
+      <title>Referencing Strategies</title>
+      <p/>
+    </section>
+  </body>
+</topic>
