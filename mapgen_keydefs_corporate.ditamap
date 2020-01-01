@@ -2,7 +2,13 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map>
  <title>Corporate Trademarks</title>
-  <keydef keys="k_logo_2" href="http://www-03.ibm.com/ibm/history/exhibits/logo/images/920911.jpg" format="html" navtitle="IBM logo"/>
+  <topicmeta>
+    <author type="contributor">stanl</author>
+    <critdates>
+      <!--stanl-->
+      <revised modified="2020/01/01"/>
+    </critdates>
+  </topicmeta>
  <keydef keys="k_logo_1" href="art/ibm_logo_920911.jpg" format="html" navtitle="IBM logo"/>
  <keydef keys="k_tm_1">
    <topicmeta>
